@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-23T17:53:10 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Prova1" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0868bec-4ca9-4aaa-a2a5-14f4c3e91197">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterCasa"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="TabellaSet" uuid="8d09ed0a-27ff-4d09-9df3-b912faa5728a">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nuovo Data Adapter "/>
+		<parameter name="cliente_ID" class="java.lang.Integer">
+			<defaultValueExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "ClienteID" )]]></defaultValueExpression>
+		</parameter>
+		<parameter name="prenotazione_ID" class="java.lang.Integer">
+			<defaultValueExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "prenotazioneId" )]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[select *
+from prenotazione p
+where p.cliente_id=$P{cliente_ID} and p.id != $P{prenotazione_ID}]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer"/>
+		<field name="prenotato_da" class="java.sql.Timestamp"/>
+		<field name="prenotato_a" class="java.sql.Timestamp"/>
+		<field name="cliente_id" class="java.lang.Integer"/>
+		<field name="stanza_id" class="java.lang.Integer"/>
+		<field name="totale" class="java.lang.Double"/>
+	</subDataset>
+	<parameter name="c_ID" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "ClienteID" )]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select *
+from cliente c
+where c.id=$P{c_ID}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="cognome" class="java.lang.String"/>
+	<field name="num_carta_identita" class="java.lang.String"/>
+	<field name="codice_fiscale" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="34" y="5" width="489" height="63" backcolor="#F28E8D" uuid="1ff0eeef-58fc-4207-9162-08c07585d310"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="182" y="7" width="190" height="30" uuid="868378e3-f743-46d1-86ce-89e3f4ead406"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Albergo Dedalus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="40" width="257" height="30" uuid="9713b262-d37d-432d-a21a-50fa59493484"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Dettagli della prenotazione]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="6" width="100" height="20" uuid="77a3c2a2-5d5a-4a84-9558-67e1325785f4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Prenotato da:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="7" width="100" height="18" uuid="c548cc25-5d62-42ff-be1e-d299a4d4edd5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Prenotato a:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="7" width="65" height="18" uuid="4a8e02df-b240-42e7-abac-49872fc075e4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Cliente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="7" width="64" height="18" uuid="80c88bb9-002c-4bfe-adcb-7855bf5d26de"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Totale:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="265" splitType="Stretch">
+			<staticText>
+				<reportElement x="41" y="115" width="472" height="30" uuid="00d02566-da85-4840-a993-0eb0597ec8f7"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Non ci sono prenotazioni a carico del cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="45" width="190" height="30" uuid="a9dc016c-4fb5-45d0-a07f-bacf917a3d6b"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Prenotazioni già registrate]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="5" width="100" height="30" uuid="526a98fb-8122-49b9-8749-d2bf045efac3"/>
+				<textFieldExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "da" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="5" width="85" height="30" uuid="f236f2a4-90d9-47dd-bdd1-fd091a4b3d45"/>
+				<textFieldExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "a" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="5" width="120" height="30" uuid="02dc9926-5ab5-47ad-9b7e-1324292a9789"/>
+				<textFieldExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "cliente" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="5" width="130" height="30" uuid="fbb2c554-858d-4010-955c-4a7842f18555"/>
+				<textFieldExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "prezzo" )]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="80" y="80" width="395" height="100" uuid="4225cddd-726c-4480-978b-6e4a23717ee7">
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="TabellaSet" uuid="928ffdc7-cacc-4c25-ab17-073a78b1de1c">
+						<datasetParameter name="cliente_ID">
+							<datasetParameterExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "ClienteID" )]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="prenotazione_ID">
+							<datasetParameterExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}.get( "prenotazioneId" )]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="60" uuid="d7f1d920-058f-465f-b68a-3502da2aea5a">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="8b65ea88-2ef3-4f31-9d65-dadf9622231e"/>
+								<text><![CDATA[Id prenotazione]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="ae340432-6ca9-43af-b595-22fb04a2fc39"/>
+								<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="d7c79c4b-5d4d-43b5-a586-341d9e9d4f41">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="1d554b99-8370-446a-8aea-c6758f670549"/>
+								<text><![CDATA[Prenotato da:]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="96b815b2-8d14-4cab-ae26-1c0f1cf2ebdf"/>
+								<textFieldExpression><![CDATA[$F{prenotato_da}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="81" uuid="f4fee9a2-9250-46c0-bbd8-b3dbcc186f10">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="81" height="30" uuid="c7c9e70c-ff0c-4097-b95b-8b6200d92181"/>
+								<text><![CDATA[Prenotato al:]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="81" height="30" uuid="f2d08cd7-ba74-4302-87b9-c5a4539f9cb9"/>
+								<textFieldExpression><![CDATA[$F{prenotato_a}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="6696f6e4-e0d8-4b03-857c-3d7612f08154">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="8f05f869-cb05-4475-9742-cc6b976e629d"/>
+								<text><![CDATA[Id cliente]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="e7d09e65-1872-4622-bb2d-0aa26144b6b3"/>
+								<textFieldExpression><![CDATA[$F{cliente_id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="28377369-9386-473b-b9e9-168831890e4d">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="e72ac5c0-30ea-41cf-bb99-2de3512d07ab"/>
+								<text><![CDATA[Id stanza]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="66e72aa8-6cc8-421b-8e54-623085e53bf2"/>
+								<textFieldExpression><![CDATA[$F{stanza_id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="59" uuid="cca91e35-44cd-4cc4-bd15-e6b91bea780b">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="59" height="30" uuid="74e70aad-db8c-45e8-97e8-eb87424608c3"/>
+								<text><![CDATA[totale]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 2_CH" height="30"/>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="59" height="30" uuid="261984ba-6876-4293-96d2-c88df96ebeee"/>
+								<textFieldExpression><![CDATA[$F{totale} + "€"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="168" splitType="Stretch">
+			<subreport>
+				<reportElement x="20" y="10" width="524" height="150" uuid="f2c461c0-6b6a-4130-93fb-3c3aff09e9ce"/>
+				<subreportParameter name="client_ID">
+					<subreportParameterExpression><![CDATA[$P{c_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["Subreport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="41" splitType="Stretch"/>
+	</summary>
+	<noData>
+		<band height="85"/>
+	</noData>
+</jasperReport>

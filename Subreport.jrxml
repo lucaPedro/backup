@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-20T09:59:47 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Subreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3141d15f-7bc4-466a-9d7c-a897c071ecaa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterCasa"/>
+	<parameter name="client_ID" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select *
+from cliente c
+where c.id=$P{client_ID}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="cognome" class="java.lang.String"/>
+	<field name="num_carta_identita" class="java.lang.String"/>
+	<field name="codice_fiscale" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageFooter>
+		<band height="90" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="5" y="53" width="320" height="17" uuid="aa40d053-31fe-4d1a-b2c0-99158a66804f"/>
+				<textFieldExpression><![CDATA["Prenotazione registrata in data: " + new SimpleDateFormat("dd.MM.yyyy").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="120" y="5" width="50" height="40" uuid="2834f451-a802-495e-9ee4-8d07278cfdcd"/>
+				<imageExpression><![CDATA["C:/Users/Public/Pictures/Sample Pictures/Penguins.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="190" y="10" width="340" height="30" uuid="4d91cc42-3406-4c17-96a0-ad0ad55571ef"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Buon soggiorno " + $F{nome} + " " + $F{cognome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="52" width="100" height="30" uuid="9beae4ba-4876-4a39-b177-9205e95c7399"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="449" y="52" width="100" height="30" uuid="f23543e5-e31d-4c2f-bf54-bfdda1b9b9ad"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" di " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="7" y="70" width="43" height="15" uuid="badc271e-eb23-4662-ba89-1a349ad121a9"/>
+				<textFieldExpression><![CDATA["alle ore: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="47" y="70" width="100" height="15" uuid="3ba79351-26dd-43f6-b2d0-dd0c1b87aba9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd 
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context.xsd
+   http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+         http://www.springframework.org/schema/aop 
+   http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+	<!-- primo scanning dei controller -->
+	<context:component-scan base-package="dedalus.controller" />
+
+	<!-- permette di usare l'annotazione responseBody -->
+	<mvc:annotation-driven />
+
+	<!-- Scanning dei package nei quasi si fa uso di annotazioni -->
+	<context:component-scan
+		base-package="dedalus.domain, dedalus.service, dedalus.dao, dedalus.controller, dedalus.base" />
+
+	<!-- si abilità l'uso delle annotazioni nelle varie classi dello scanning -->
+	<context:annotation-config />
+	<aop:aspectj-autoproxy />
+
+	<import resource="classpath:/front-view.xml" />
+
+</beans>

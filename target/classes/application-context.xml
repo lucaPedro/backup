@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd 
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+
+	<!-- Project properties -->
+	<bean id="projectProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<prop key="application.id">dedalusAlbergo</prop>
+				<prop key="application.name">dedalusAlbergo</prop>
+				<prop key="database.jndiname">jdbc/central</prop>
+				<prop key="database.dialect">org.hibernate.dialect.PostgreSQL9Dialect</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Makes project properties resolvable -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties" ref="projectProperties" />
+	</bean>
+
+</beans>
